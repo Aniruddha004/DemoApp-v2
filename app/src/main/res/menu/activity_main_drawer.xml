@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/employees">
+        <menu>
+            <item
+                android:id="@+id/nav_emp_registration"
+                android:title="@string/employee_registration" />
+            <item
+                android:id="@+id/nav_emp_updates"
+                android:title="@string/employee_updates" />
+            <item
+                android:id="@+id/nav_emp_search"
+                android:title="@string/search_employees" />
+            <item
+                android:id="@+id/nav_emp_credentials"
+                android:title="@string/employee_credentials" />
+        </menu>
+    </item>
+
+    <item android:title="@string/students">
+        <menu>
+            <item
+                android:id="@+id/nav_stud_registration"
+                android:title="@string/student_registration" />
+            <item
+                android:id="@+id/nav_stud_updates"
+                android:title="@string/student_updates" />
+            <item
+                android:id="@+id/nav_stud_search"
+                android:title="@string/search_students" />
+            <item
+                android:id="@+id/nav_stud_credentials"
+                android:title="@string/student_credentials" />
+            <item
+                android:id="@+id/nav_bulk_upload"
+                android:title="@string/bulk_upload" />
+        </menu>
+    </item>
+
+    <item android:title="@string/notice_home_syllabus">
+        <menu>
+            <item
+                android:id="@+id/nav_notice_to_class"
+                android:title="@string/notice_to_class" />
+            <item
+                android:id="@+id/nav_notice_to_student"
+                android:title="@string/notice_to_student" />
+            <item
+                android:id="@+id/nav_home_work"
+                android:title="@string/home_work" />
+            <item
+                android:id="@+id/nav_add_syllabus"
+                android:title="@string/add_syllabus" />
+        </menu>
+    </item>
+
+    <item android:title="@string/attendence">
+        <menu>
+            <item
+                android:id="@+id/nav_student_attendence"
+                android:title="@string/student_attendence" />
+            <item
+                android:id="@+id/nav_student_attendence_report"
+                android:title="@string/student_attendence_report" />
+            <item
+                android:id="@+id/nav_teacher_attendence"
+                android:title="@string/teacher_attendence" />
+            <item
+                android:id="@+id/nav_teacher_attendence_report"
+                android:title="@string/teacher_attendence_report" />
+        </menu>
+    </item>
+
+    <item android:title="@string/marks">
+        <menu>
+            <item
+                android:id="@+id/nav_marks_home"
+                android:title="@string/marks_home" />
+            <item
+                android:id="@+id/nav_class_report"
+                android:title="@string/class_report" />
+            <item
+                android:id="@+id/nav_report_card"
+                android:title="@string/report_card" />
+        </menu>
+    </item>
+
+    <item android:title="@string/class_rooms">
+        <menu>
+            <item
+                android:id="@+id/nav_add_classroom"
+                android:title="@string/add_classroom" />
+        </menu>
+    </item>
+
+    <item android:title="@string/timetable">
+        <menu>
+            <item
+                android:id="@+id/nav_add_timetable_detail"
+                android:title="@string/add_timetable_detail" />
+            <item
+                android:id="@+id/nav_view_timetable_details"
+                android:title="@string/view_timetable_details" />
+        </menu>
+    </item>
+
+    <item android:title="@string/fees">
+        <menu>
+            <item
+                android:id="@+id/nav_fee_home"
+                android:title="@string/fee_home" />
+            <item
+                android:id="@+id/nav_fine"
+                android:title="@string/fine" />
+            <item
+                android:id="@+id/nav_class_fee_collection"
+                android:title="@string/class_fee_collection" />
+            <item
+                android:id="@+id/nav_search_defaulter"
+                android:title="@string/search_defaulter" />
+            <item
+                android:id="@+id/nav_fee_collection_report"
+                android:title="@string/fee_collection_report" />
+        </menu>
+    </item>
+
+    <item android:title="@string/delete">
+        <menu>
+            <item
+                android:id="@+id/nav_delete_student_details"
+                android:title="@string/delete_student_details" />
+            <item
+                android:id="@+id/nav_get_deleted_students_data"
+                android:title="@string/get_deleted_students_data" />
+            <item
+                android:id="@+id/nav_delete_employee_details"
+                android:title="@string/delete_employee_details" />
+            <item
+                android:id="@+id/nav_get_deleted_employees_data"
+                android:title="@string/get_deleted_employees_data" />
+        </menu>
+    </item>
+
+    <item android:title="@string/transport">
+        <menu>
+            <item
+                android:id="@+id/nav_add_vehicle"
+                android:title="@string/add_vehicle" />
+            <item
+                android:id="@+id/nav_vehicle_list"
+                android:title="@string/vehicle_list" />
+            <item
+                android:id="@+id/nav_driver"
+                android:title="@string/driver" />
+            <item
+                android:id="@+id/nav_route_wise_attendence"
+                android:title="@string/route_wise_attendence" />
+            <item
+                android:id="@+id/nav_routes"
+                android:title="@string/routes" />
+            <item
+                android:id="@+id/nav_routes_report"
+                android:title="@string/routes_report" />
+        </menu>
+    </item>
+
+    <item android:title="@string/visitors">
+        <menu>
+            <item
+                android:id="@+id/nav_add_visitor"
+                android:title="@string/add_visitor" />
+            <item
+                android:id="@+id/nav_visitor_list"
+                android:title="@string/visitor_list" />
+        </menu>
+    </item>
+
+
+    <item android:title="@string/gallery">
+        <menu>
+            <item
+                android:id="@+id/nav_add_album"
+                android:title="@string/add_album" />
+            <item
+                android:id="@+id/nav_add_photo"
+                android:title="@string/add_photo" />
+            <item
+                android:id="@+id/nav_add_video"
+                android:title="@string/add_video" />
+        </menu>
+    </item>
+
+
+</menu>
