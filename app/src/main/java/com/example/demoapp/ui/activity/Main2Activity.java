@@ -30,6 +30,7 @@ import com.example.demoapp.ui.fragment.FineFragment;
 import com.example.demoapp.ui.fragment.RouteWiseAttendanceFragment;
 import com.example.demoapp.ui.fragment.RoutesFragment;
 import com.example.demoapp.ui.fragment.RoutesReportFragment;
+import com.example.demoapp.ui.fragment.SearchDefaulterFragment;
 import com.example.demoapp.ui.fragment.StudentRegistrationFragment;
 import com.example.demoapp.ui.fragment.ViewTimetableFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -168,7 +169,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     } else if (childName.equals(getString(R.string.fee_collection_report))) {
 
                     } else {
-
+                        fragment = SearchDefaulterFragment.newInstance();
                     }
 
                 } else if (groupName.equals(getString(R.string.delete))) {
