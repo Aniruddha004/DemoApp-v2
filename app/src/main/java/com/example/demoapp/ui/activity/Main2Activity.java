@@ -25,6 +25,7 @@ import com.example.demoapp.ui.fragment.DriverFragment;
 import com.example.demoapp.ui.fragment.EmpRegistrationFragment;
 import com.example.demoapp.ui.fragment.EmpSearchFragment;
 import com.example.demoapp.ui.fragment.EmpUpdateFragment;
+import com.example.demoapp.ui.fragment.FeeCollectionReportFragment;
 import com.example.demoapp.ui.fragment.FeeHomeFragment;
 import com.example.demoapp.ui.fragment.FineFragment;
 import com.example.demoapp.ui.fragment.RouteWiseAttendanceFragment;
@@ -167,7 +168,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     } else if (childName.equals(getString(R.string.class_fee_collection))) {
                         fragment = ClassFeeCollectionFragment.newInstance();
                     } else if (childName.equals(getString(R.string.fee_collection_report))) {
-
+                        fragment = FeeCollectionReportFragment.newInstance();
                     } else {
                         fragment = SearchDefaulterFragment.newInstance();
                     }
