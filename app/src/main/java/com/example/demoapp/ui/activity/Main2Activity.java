@@ -19,14 +19,21 @@ import com.example.demoapp.CustomAdapter;
 import com.example.demoapp.GroupInfo;
 import com.example.demoapp.R;
 import com.example.demoapp.ui.fragment.AddTimetableFragment;
+import com.example.demoapp.ui.fragment.AddVehicleFragment;
 import com.example.demoapp.ui.fragment.ClassFeeCollectionFragment;
+import com.example.demoapp.ui.fragment.DriverFragment;
 import com.example.demoapp.ui.fragment.EmpRegistrationFragment;
 import com.example.demoapp.ui.fragment.EmpSearchFragment;
 import com.example.demoapp.ui.fragment.EmpUpdateFragment;
+import com.example.demoapp.ui.fragment.FeeHomeFragment;
 import com.example.demoapp.ui.fragment.FineFragment;
+import com.example.demoapp.ui.fragment.RouteWiseAttendanceFragment;
+import com.example.demoapp.ui.fragment.RoutesFragment;
+import com.example.demoapp.ui.fragment.RoutesReportFragment;
 import com.example.demoapp.ui.fragment.StudentRegistrationFragment;
 import com.google.android.material.navigation.NavigationView;
 
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -152,7 +159,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     }
                 } else if (groupName.equals(getString(R.string.fees))) {
                     if (childName.equals(getString(R.string.fee_home))) {
-
+                        fragment = FeeHomeFragment.newInstance();
                     } else if (childName.equals(getString(R.string.fine))) {
                         fragment = FineFragment.newInstance();
                     } else if (childName.equals(getString(R.string.class_fee_collection))) {
@@ -176,17 +183,17 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
 
                 } else if (groupName.equals(getString(R.string.transport))) {
                     if (childName.equals(getString(R.string.add_vehicle))) {
-
+                        fragment= new AddVehicleFragment();
                     } else if (childName.equals(getString(R.string.vehicle_list))) {
 
                     } else if (childName.equals(getString(R.string.driver))) {
-
+                        fragment= new DriverFragment();
                     } else if (childName.equals(getString(R.string.route_wise_attendence))) {
-
+                        fragment=new RouteWiseAttendanceFragment();
                     } else if (childName.equals(getString(R.string.routes))) {
-
+                        fragment=new RoutesFragment();
                     } else {
-
+                        fragment=new RoutesReportFragment();
                     }
                 } else if (groupName.equals(getString(R.string.visitors))) {
                     if (childName.equals(getString(R.string.add_visitor))) {

@@ -32,12 +32,12 @@ public class ClassFeeCollectionFragment extends Fragment {
 //        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 //        spinner.setAdapter(adapter);
 
-        String [] feeCat =
-                {"1-A","2-A","3-A","4-A","5-A","6-A","7-A","8-A","9-A","10-A",};
-        Spinner spin = (Spinner) v.findViewById(R.id.spinnerFeeCategory);
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, feeCat);
-        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spin.setAdapter(adapter1);
+//        String [] feeCat =
+//                {"1-A","2-A","3-A","4-A","5-A","6-A","7-A","8-A","9-A","10-A",};
+//        Spinner spin = (Spinner) v.findViewById(R.id.spinnerFeeCategory);
+//        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, feeCat);
+//        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+//        spin.setAdapter(adapter1);
 
         return v;
         // Inflate the layout for this fragment
