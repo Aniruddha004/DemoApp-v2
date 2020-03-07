@@ -31,6 +31,7 @@ import com.example.demoapp.ui.fragment.RouteWiseAttendanceFragment;
 import com.example.demoapp.ui.fragment.RoutesFragment;
 import com.example.demoapp.ui.fragment.RoutesReportFragment;
 import com.example.demoapp.ui.fragment.StudentRegistrationFragment;
+import com.example.demoapp.ui.fragment.ViewTimetableFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.sql.Driver;
@@ -155,7 +156,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     if (childName.equals(getString(R.string.add_timetable_detail))) {
                         fragment = AddTimetableFragment.newInstance();
                     } else {
-
+                        fragment = ViewTimetableFragment.newInstance();
                     }
                 } else if (groupName.equals(getString(R.string.fees))) {
                     if (childName.equals(getString(R.string.fee_home))) {
