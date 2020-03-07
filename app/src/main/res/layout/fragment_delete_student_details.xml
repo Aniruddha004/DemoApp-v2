@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.SearchDefaulterFragment">
+    tools:context=".ui.fragment.DeleteStudentDetailsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_marginBottom="10dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:text="Search Defaulters"
+            android:text="Search Students To Delete Record"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -30,24 +30,31 @@
             android:layout_height="1dp"
             android:background="@android:color/darker_gray" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:text="Class/Section:"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <Spinner
-            android:id="@+id/spinnerDefaulters"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:hint="Name"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:hint="Admission Number"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:background="@android:drawable/btn_dropdown"
             android:spinnerMode="dropdown" />
 
