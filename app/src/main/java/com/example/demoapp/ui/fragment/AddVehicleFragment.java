@@ -13,7 +13,7 @@ import com.example.demoapp.R;
 public class AddVehicleFragment extends Fragment {
 
     public static AddVehicleFragment newInstance() {
-        return AddVehicleFragment.newInstance();
+        return new AddVehicleFragment();
     }
 
 

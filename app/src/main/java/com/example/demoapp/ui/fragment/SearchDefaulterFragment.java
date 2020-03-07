@@ -10,15 +10,11 @@ import android.view.ViewGroup;
 
 import com.example.demoapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class SearchDefaulterFragment extends Fragment {
 
     public static SearchDefaulterFragment newInstance() {
-        return SearchDefaulterFragment.newInstance();
+        return new SearchDefaulterFragment();
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

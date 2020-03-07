@@ -161,7 +161,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                 } else if (groupName.equals(getString(R.string.timetable))) {
                     if (childName.equals(getString(R.string.add_timetable_detail))) {
                         fragment = AddTimetableFragment.newInstance();
-                    } else {
+                    } else if(childName.equals(getString(R.string.view_timetable_details))){
                         fragment = ViewTimetableFragment.newInstance();
                     }
                 } else if (groupName.equals(getString(R.string.fees))) {
@@ -173,9 +173,8 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                         fragment = ClassFeeCollectionFragment.newInstance();
                     } else if (childName.equals(getString(R.string.fee_collection_report))) {
                         fragment = FeeCollectionReportFragment.newInstance();
-                    } else {
+                    } else if(childName.equals(getString(R.string.search_defaulter)))
                         fragment = SearchDefaulterFragment.newInstance();
-                    }
 
                 } else if (groupName.equals(getString(R.string.delete))) {
                     if (childName.equals(getString(R.string.delete_student_details))) {

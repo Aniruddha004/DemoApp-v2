@@ -10,15 +10,11 @@ import android.view.ViewGroup;
 
 import com.example.demoapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class ViewTimetableFragment extends Fragment {
 
     public static ViewTimetableFragment newInstance() {
-        return ViewTimetableFragment.newInstance();
+        return new ViewTimetableFragment();
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

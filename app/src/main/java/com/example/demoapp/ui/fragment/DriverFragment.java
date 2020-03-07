@@ -16,7 +16,7 @@ import com.example.demoapp.R;
 public class DriverFragment extends Fragment {
 
     public static DriverFragment newInstance() {
-        return DriverFragment.newInstance();
+        return new DriverFragment();
     }
 
 

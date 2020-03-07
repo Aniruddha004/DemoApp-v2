@@ -16,7 +16,7 @@ import com.example.demoapp.R;
 public class RoutesReportFragment extends Fragment {
 
     public static RoutesReportFragment newInstance() {
-        return RoutesReportFragment.newInstance();
+        return new RoutesReportFragment();
     }
 
 

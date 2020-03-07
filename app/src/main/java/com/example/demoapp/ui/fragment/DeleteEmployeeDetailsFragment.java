@@ -16,7 +16,7 @@ import com.example.demoapp.R;
 public class DeleteEmployeeDetailsFragment extends Fragment {
 
     public static DeleteEmployeeDetailsFragment newInstance() {
-        return DeleteEmployeeDetailsFragment.newInstance();
+        return new DeleteEmployeeDetailsFragment();
     }
 
 

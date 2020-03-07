@@ -16,7 +16,7 @@ import com.example.demoapp.R;
 public class DeletedEmployeesDataFragment extends Fragment {
 
     public static DeletedEmployeesDataFragment newInstance() {
-        return DeletedEmployeesDataFragment.newInstance();
+        return new DeletedEmployeesDataFragment();
     }
 
 
