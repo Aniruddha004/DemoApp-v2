@@ -21,6 +21,8 @@ import com.example.demoapp.R;
 import com.example.demoapp.ui.fragment.AddTimetableFragment;
 import com.example.demoapp.ui.fragment.AddVehicleFragment;
 import com.example.demoapp.ui.fragment.ClassFeeCollectionFragment;
+import com.example.demoapp.ui.fragment.DeleteStudentDetailsFragment;
+import com.example.demoapp.ui.fragment.DeletedStudentsDataFragment;
 import com.example.demoapp.ui.fragment.DriverFragment;
 import com.example.demoapp.ui.fragment.EmpRegistrationFragment;
 import com.example.demoapp.ui.fragment.EmpSearchFragment;
@@ -175,9 +177,9 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
 
                 } else if (groupName.equals(getString(R.string.delete))) {
                     if (childName.equals(getString(R.string.delete_student_details))) {
-
+                        fragment = DeleteStudentDetailsFragment.newInstance();
                     } else if (childName.equals(getString(R.string.get_deleted_students_data))) {
-
+                        fragment = DeletedStudentsDataFragment.newInstance();
                     } else if (childName.equals(getString(R.string.delete_employee_details))) {
 
                     } else {
