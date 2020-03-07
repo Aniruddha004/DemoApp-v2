@@ -10,18 +10,20 @@ import android.view.ViewGroup;
 
 import com.example.demoapp.R;
 
-public class FineFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class AddPhotoFragment extends Fragment {
 
-    public static FineFragment newInstance() {
-        return new FineFragment();
+    public static AddPhotoFragment newInstance() {
+        return new AddPhotoFragment();
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fine_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_add_photo, container, false);
     }
-    }
-
-
+}

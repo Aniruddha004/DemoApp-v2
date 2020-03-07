@@ -14,10 +14,13 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.demoapp.AddVideoFragment;
 import com.example.demoapp.ChildInfo;
 import com.example.demoapp.CustomAdapter;
 import com.example.demoapp.GroupInfo;
 import com.example.demoapp.R;
+import com.example.demoapp.ui.fragment.AddAlbumFragment;
+import com.example.demoapp.ui.fragment.AddPhotoFragment;
 import com.example.demoapp.ui.fragment.AddTimetableFragment;
 import com.example.demoapp.ui.fragment.AddVehicleFragment;
 import com.example.demoapp.ui.fragment.ClassFeeCollectionFragment;
@@ -38,6 +41,7 @@ import com.example.demoapp.ui.fragment.RoutesReportFragment;
 import com.example.demoapp.ui.fragment.SearchDefaulterFragment;
 import com.example.demoapp.ui.fragment.StudentRegistrationFragment;
 import com.example.demoapp.ui.fragment.ViewTimetableFragment;
+import com.example.demoapp.ui.fragment.VisitorListFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.sql.Driver;
@@ -203,18 +207,18 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     }
                 } else if (groupName.equals(getString(R.string.visitors))) {
                     if (childName.equals(getString(R.string.add_visitor))) {
-
+                        fragment = new VisitorListFragment();
                     } else {
 
                     }
 
                 } else {
                     if (childName.equals(getString(R.string.add_album))) {
-
+                        fragment = AddAlbumFragment.newInstance();
                     } else if (childName.equals(getString(R.string.add_photo))) {
-
+                        fragment = AddPhotoFragment.newInstance();
                     } else {
-
+                        fragment = AddVideoFragment.newInstance();
                     }
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
