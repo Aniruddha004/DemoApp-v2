@@ -110,7 +110,6 @@
     <item android:title="@string/fees">
         <menu>
             <item
-
                 android:id="@+id/nav_set_fee_category"
                 android:title="@string/set_fee_category" />
             <item
