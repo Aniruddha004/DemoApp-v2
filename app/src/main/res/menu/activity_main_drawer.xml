@@ -110,8 +110,18 @@
     <item android:title="@string/fees">
         <menu>
             <item
-                android:id="@+id/nav_fee_home"
-                android:title="@string/fee_home" />
+
+                android:id="@+id/nav_set_fee_category"
+                android:title="@string/set_fee_category" />
+            <item
+                android:id="@+id/nav_fee_collection"
+                android:title="@string/fee_collection" />
+            <item
+                android:id="@+id/nav_fee_cycle"
+                android:title="@string/fee_cycle" />
+            <item
+                android:id="@+id/nav_add_fee_discount"
+                android:title="@string/add_fee_discount" />
             <item
                 android:id="@+id/nav_fine"
                 android:title="@string/fine" />

@@ -1,4 +1,4 @@
-package com.example.demoapp.ui.fragment;
+package com.example.demoapp.ui.fragment.Fees;
 
 import android.os.Bundle;
 
@@ -13,10 +13,10 @@ import com.example.demoapp.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AddAlbumFragment extends Fragment {
+public class FeeCollectionFragment extends Fragment {
 
-    public static AddAlbumFragment newInstance() {
-        return new AddAlbumFragment();
+    public static FeeCollectionFragment newInstance() {
+        return new FeeCollectionFragment();
     }
 
 
@@ -24,6 +24,6 @@ public class AddAlbumFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_album, container, false);
+        return inflater.inflate(R.layout.fragment_fee_collection, container, false);
     }
 }

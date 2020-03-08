@@ -64,7 +64,10 @@
     <string name="search_defaulter">Search Defaulter</string>
     <string name="view_timetable_details">View TimeTable Details</string>
     <string name="add_timetable_detail">Add TimeTable Detail</string>
-    <string name="fee_home">Fee Home</string>
+    <string name="set_fee_category">Set Fee Category</string>
+    <string name="fee_collection">Fee Collection</string>
+    <string name="fee_cycle">Fee Cycle</string>
+    <string name="add_fee_discount">Add Fee Discount</string>
     <string name="fine">Fine</string>
     <string name="class_fee_collection">Class Fee Collection</string>
     <string name="add_classroom">Add ClassRoom</string>

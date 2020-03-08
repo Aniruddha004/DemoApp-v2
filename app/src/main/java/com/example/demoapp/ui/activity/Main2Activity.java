@@ -14,7 +14,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.demoapp.AddVideoFragment;
 import com.example.demoapp.ChildInfo;
 import com.example.demoapp.CustomAdapter;
 import com.example.demoapp.GroupInfo;
@@ -23,6 +22,8 @@ import com.example.demoapp.ui.fragment.AddAlbumFragment;
 import com.example.demoapp.ui.fragment.AddPhotoFragment;
 import com.example.demoapp.ui.fragment.AddTimetableFragment;
 import com.example.demoapp.ui.fragment.AddVehicleFragment;
+import com.example.demoapp.ui.fragment.AddVideoFragment;
+import com.example.demoapp.ui.fragment.AddVisitorFragment;
 import com.example.demoapp.ui.fragment.ClassFeeCollectionFragment;
 import com.example.demoapp.ui.fragment.DeleteEmployeeDetailsFragment;
 import com.example.demoapp.ui.fragment.DeleteStudentDetailsFragment;
@@ -30,21 +31,22 @@ import com.example.demoapp.ui.fragment.DeletedEmployeesDataFragment;
 import com.example.demoapp.ui.fragment.DeletedStudentsDataFragment;
 import com.example.demoapp.ui.fragment.DriverFragment;
 import com.example.demoapp.ui.fragment.EmpRegistrationFragment;
-import com.example.demoapp.ui.fragment.EmpSearchFragment;
-import com.example.demoapp.ui.fragment.EmpUpdateFragment;
 import com.example.demoapp.ui.fragment.FeeCollectionReportFragment;
-import com.example.demoapp.ui.fragment.FeeHomeFragment;
+import com.example.demoapp.ui.fragment.Fees.AddFeeDiscountFragment;
+import com.example.demoapp.ui.fragment.Fees.FeeCollectionFragment;
+import com.example.demoapp.ui.fragment.Fees.FeeCycleFragment;
+import com.example.demoapp.ui.fragment.Fees.SetFeeCategoryFragment;
 import com.example.demoapp.ui.fragment.FineFragment;
 import com.example.demoapp.ui.fragment.RouteWiseAttendanceFragment;
 import com.example.demoapp.ui.fragment.RoutesFragment;
 import com.example.demoapp.ui.fragment.RoutesReportFragment;
 import com.example.demoapp.ui.fragment.SearchDefaulterFragment;
 import com.example.demoapp.ui.fragment.StudentRegistrationFragment;
+import com.example.demoapp.ui.fragment.Transport.VehicleListFragment;
 import com.example.demoapp.ui.fragment.ViewTimetableFragment;
 import com.example.demoapp.ui.fragment.VisitorListFragment;
 import com.google.android.material.navigation.NavigationView;
 
-import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -104,11 +106,11 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
 
                 if (groupName.equals(getString(R.string.employees))) {
                     if (childName.equals(getString(R.string.employee_registration))) {
-                        fragment = EmpRegistrationFragment.newInstance();
+
                     } else if (childName.equals(getString(R.string.employee_updates))) {
-                        fragment = EmpUpdateFragment.newInstance();
+
                     } else if (childName.equals(getString(R.string.search_employees))) {
-                        fragment = EmpSearchFragment.newInstance();
+
                     } else {
 
                     }
@@ -169,13 +171,19 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                         fragment = ViewTimetableFragment.newInstance();
                     }
                 } else if (groupName.equals(getString(R.string.fees))) {
-                    if (childName.equals(getString(R.string.fee_home))) {
-                        fragment = FeeHomeFragment.newInstance();
+                    if (childName.equals(getString(R.string.set_fee_category))) {
+                        fragment = SetFeeCategoryFragment.newInstance();
+                    }else if (childName.equals(getString(R.string.fee_collection))) {
+                        fragment = FeeCollectionFragment.newInstance();
+                    } else if (childName.equals(getString(R.string.fee_cycle))) {
+                        fragment = FeeCycleFragment.newInstance();
+                    } else if (childName.equals(getString(R.string.add_fee_discount))) {
+                        fragment = AddFeeDiscountFragment.newInstance();
                     } else if (childName.equals(getString(R.string.fine))) {
                         fragment = FineFragment.newInstance();
                     } else if (childName.equals(getString(R.string.class_fee_collection))) {
                         fragment = ClassFeeCollectionFragment.newInstance();
-                    } else if (childName.equals(getString(R.string.fee_collection_report))) {
+                    }else if (childName.equals(getString(R.string.fee_collection_report))) {
                         fragment = FeeCollectionReportFragment.newInstance();
                     } else if(childName.equals(getString(R.string.search_defaulter)))
                         fragment = SearchDefaulterFragment.newInstance();
@@ -193,23 +201,23 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
 
                 } else if (groupName.equals(getString(R.string.transport))) {
                     if (childName.equals(getString(R.string.add_vehicle))) {
-                        fragment= new AddVehicleFragment();
+                        fragment= AddVehicleFragment.newInstance();
                     } else if (childName.equals(getString(R.string.vehicle_list))) {
-
+                        fragment = VehicleListFragment.newInstance();
                     } else if (childName.equals(getString(R.string.driver))) {
-                        fragment= new DriverFragment();
+                        fragment= DriverFragment.newInstance();
                     } else if (childName.equals(getString(R.string.route_wise_attendence))) {
-                        fragment=new RouteWiseAttendanceFragment();
+                        fragment= RouteWiseAttendanceFragment.newInstance();
                     } else if (childName.equals(getString(R.string.routes))) {
-                        fragment=new RoutesFragment();
+                        fragment= RoutesFragment.newInstance();
                     } else {
-                        fragment=new RoutesReportFragment();
+                        fragment= RoutesReportFragment.newInstance();
                     }
                 } else if (groupName.equals(getString(R.string.visitors))) {
                     if (childName.equals(getString(R.string.add_visitor))) {
-                        fragment = new VisitorListFragment();
+                        fragment = AddVisitorFragment.newInstance();
                     } else {
-
+                        fragment = VisitorListFragment.newInstance();
                     }
 
                 } else {
@@ -305,7 +313,10 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         addProduct(getString(R.string.timetable), "Add TimeTable Detail");
         addProduct(getString(R.string.timetable), "View TimeTable Details");
 
-        addProduct(getString(R.string.fees), "Fee Home");
+        addProduct(getString(R.string.fees), "Set Fee Category");
+        addProduct(getString(R.string.fees), "Fee Collection");
+        addProduct(getString(R.string.fees), "Fee Cycle");
+        addProduct(getString(R.string.fees), "Add Fee Discount");
         addProduct(getString(R.string.fees), "Fine");
         addProduct(getString(R.string.fees), "Class Fee Collection");
         addProduct(getString(R.string.fees), "Search Defaulter");
